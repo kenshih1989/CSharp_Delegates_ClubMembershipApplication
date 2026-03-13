@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ClubMembershipApplication.Migrations
 {
-    [DbContext(typeof(ClassMembershipDBContext))]
+    [DbContext(typeof(ClubMembershipDBContext))]
     partial class ClassMembershipDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

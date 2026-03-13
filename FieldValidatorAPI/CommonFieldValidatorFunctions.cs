@@ -96,9 +96,12 @@ namespace FieldValidatorAPI
 
         private static bool IsDateOfBirthValid(string dateTime, out DateTime validDateTime)
         {
-            if (DateTime.TryParse(dateTime, out validDateTime))
-                return true;
-            return false;
+            // This only returns true if the user types exactly Year-Month-Day
+            return DateTime.TryParseExact(dateTime,
+                                          "yyyy-MM-dd",
+                                          System.Globalization.CultureInfo.InvariantCulture,
+                                          System.Globalization.DateTimeStyles.None,
+                                          out validDateTime);
         }
 
         private static bool IsPaternMatchValid(string fieldValue, string regularExpressionPattern)

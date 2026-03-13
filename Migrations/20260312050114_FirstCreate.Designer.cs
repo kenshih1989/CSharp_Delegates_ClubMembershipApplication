@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ClubMembershipApplication.Migrations
 {
-    [DbContext(typeof(ClassMembershipDBContext))]
+    [DbContext(typeof(ClubMembershipDBContext))]
     [Migration("20260312050114_FirstCreate")]
     partial class FirstCreate
     {

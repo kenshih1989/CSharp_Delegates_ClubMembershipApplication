@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ClubMembershipApplication.Data
 {
-    internal class ClassMembershipDBContext : DbContext
+    internal class ClubMembershipDBContext : DbContext
     {
         // setting up the database connection string to use a local SQLite database file named "ClassMembership.db" located in the application's base directory.
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

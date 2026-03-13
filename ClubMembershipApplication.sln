@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.37012.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubMembershipApplication", "ClubMembershipApplication.csproj", "{9436185B-C766-4F60-8EBE-1EF5CF8ADBDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldValidatorAPI", "..\FieldValidatorAPI\FieldValidatorAPI.csproj", "{B62D2F96-294E-4B39-9CB7-35E2F0A2AC2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldValidatorAPI", "FieldValidatorAPI\FieldValidatorAPI.csproj", "{62949CCF-FFA8-4ABA-B8BC-A8ED6E460D78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{9436185B-C766-4F60-8EBE-1EF5CF8ADBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9436185B-C766-4F60-8EBE-1EF5CF8ADBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9436185B-C766-4F60-8EBE-1EF5CF8ADBDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B62D2F96-294E-4B39-9CB7-35E2F0A2AC2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B62D2F96-294E-4B39-9CB7-35E2F0A2AC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B62D2F96-294E-4B39-9CB7-35E2F0A2AC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B62D2F96-294E-4B39-9CB7-35E2F0A2AC2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62949CCF-FFA8-4ABA-B8BC-A8ED6E460D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62949CCF-FFA8-4ABA-B8BC-A8ED6E460D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62949CCF-FFA8-4ABA-B8BC-A8ED6E460D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62949CCF-FFA8-4ABA-B8BC-A8ED6E460D78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

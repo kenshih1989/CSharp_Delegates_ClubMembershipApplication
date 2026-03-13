@@ -1,10 +1,15 @@
-﻿namespace ClubMembershipApplication
+﻿using ClubMembershipApplication.Views;
+
+namespace ClubMembershipApplication
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            IView mainView = Factory.CreateMainView();
+            mainView.RunView();
+
+            Console.ReadKey();
         }
     }
 }
