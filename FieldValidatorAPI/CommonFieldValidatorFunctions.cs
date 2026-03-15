@@ -11,10 +11,10 @@ namespace FieldValidatorAPI
     public delegate bool RequiredFieldValidatorDelegate(string fieldValue);
     public delegate bool StringLengthValidatorDelegate(string fieldValue, int minLength, int maxLength);
     public delegate bool DateOfBirthValidatorDelegate(string fieldValue, out DateTime validDateTime);
-    public delegate bool PaternMatcherValidatorDelegate(string fieldValue, string pattern);
+    public delegate bool PatternMatcherValidatorDelegate(string fieldValue, string pattern);
     public delegate bool CompareFieldsValidatorDelegate(string fieldValue, string fieldValueToCompare);
     #endregion
-    internal class CommonFiledValidatorFunctions
+    internal class CommonFieldValidatorFunctions
     {
 
         #region The lazy initialization of the delegate instances for each type of validation
@@ -23,7 +23,7 @@ namespace FieldValidatorAPI
         private static RequiredFieldValidatorDelegate _requiredFieldValidator = null;
         private static StringLengthValidatorDelegate _stringLengthValidator = null;
         private static DateOfBirthValidatorDelegate _dateOfBirthValidator = null;
-        private static PaternMatcherValidatorDelegate _paternMatcherValidator = null;
+        private static PatternMatcherValidatorDelegate _paternMatcherValidator = null;
         private static CompareFieldsValidatorDelegate _compareFieldsValidator = null;
 
         // The public static properties that provide access to the delegate instances for each type of validation, using lazy initialization
@@ -57,12 +57,12 @@ namespace FieldValidatorAPI
             }
         }
 
-        public static PaternMatcherValidatorDelegate PaternMatcherValidatorDelegate
+        public static PatternMatcherValidatorDelegate PaternMatcherValidatorDelegate
         {
             get
             {
                 if (_paternMatcherValidator == null)
-                    _paternMatcherValidator = new PaternMatcherValidatorDelegate(IsPaternMatchValid);
+                    _paternMatcherValidator = new PatternMatcherValidatorDelegate(IsPaternMatchValid);
                 return _paternMatcherValidator;
             }
         }

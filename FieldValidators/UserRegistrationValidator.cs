@@ -23,7 +23,7 @@ namespace ClubMembershipApplication.FieldValidators
         private RequiredFieldValidatorDelegate _requiredFieldValidator = null;
         private StringLengthValidatorDelegate _stringLengthValidator = null;
         private DateOfBirthValidatorDelegate _dateOfBirthValidator = null;
-        private PaternMatcherValidatorDelegate _paternMatcherValidator = null;
+        private PatternMatcherValidatorDelegate _paternMatcherValidator = null;
         private CompareFieldsValidatorDelegate _compareFieldsValidator = null;
 
         private FieldValidatorDelegate _fieldValidatorDelegate = null;
@@ -49,11 +49,11 @@ namespace ClubMembershipApplication.FieldValidators
 
         public void InitializeFieldValidatorsDelegates()
         {
-            _requiredFieldValidator = CommonFiledValidatorFunctions.RequiredFieldValidatorDelegate;
-            _stringLengthValidator = CommonFiledValidatorFunctions.StringLengthValidatorDelegate;
-            _dateOfBirthValidator = CommonFiledValidatorFunctions.DateOfBirthValidatorDelegate;
-            _paternMatcherValidator = CommonFiledValidatorFunctions.PaternMatcherValidatorDelegate;
-            _compareFieldsValidator = CommonFiledValidatorFunctions.CompareFieldsValidatorDelegate;
+            _requiredFieldValidator = CommonFieldValidatorFunctions.RequiredFieldValidatorDelegate;
+            _stringLengthValidator = CommonFieldValidatorFunctions.StringLengthValidatorDelegate;
+            _dateOfBirthValidator = CommonFieldValidatorFunctions.DateOfBirthValidatorDelegate;
+            _paternMatcherValidator = CommonFieldValidatorFunctions.PaternMatcherValidatorDelegate;
+            _compareFieldsValidator = CommonFieldValidatorFunctions.CompareFieldsValidatorDelegate;
 
             _fieldValidatorDelegate = new FieldValidatorDelegate(IsFieldValid);
             _emailExistDelegate = new EmailExistDelegate(_register.EmailAddressExists);
